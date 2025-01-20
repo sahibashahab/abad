@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: rgb(64, 146, 184); /* New foreground color */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 30, 182, 255; /* Adjusted for dark mode */
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: #000000; /* Light background */
+}
+
+#sticky-card-1 {
+  --index: 1;
+}
+
+#sticky-card-2 {
+  --index: 2;
+}
+
+#sticky-card-3 {
+  --index: 3;
+}
+
+#sticky-card-4 {
+  --index: 4;
+}
+
+.sticky-card {
+  top: calc(var(--index) * 4rem);
+ 
+  border-radius: 8px; /* Optional rounded corners */
+  box-shadow: 0px 4px 8px rgba(17, 84, 129, 0.1); /* Optional shadow */
+}

@@ -1,0 +1,169 @@
+// @flow strict
+
+import { personalData } from "@/utils/data/personal-data";
+import Image from "next/image";
+import Link from "next/link";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { FaFacebook, FaTwitterSquare } from "react-icons/fa";
+import { MdDownload } from "react-icons/md";
+import { RiContactsFill } from "react-icons/ri";
+import { FaInstagram } from "react-icons/fa";
+
+function HeroSection() {
+  return (
+    <section className="relative flex flex-col items-center justify-between py-4 lg:py-12">
+    
+      <div className="grid grid-cols-1 items-start lg:grid-cols-2 lg:gap-12 gap-y-8">
+        <div className="flex flex-col items-start justify-center p-2 pb-20 md:pb-10 lg:pt-10">
+          <h1 className="text-3xl font-bold leading-10 text-white md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem]">
+            Hello, <br />
+            This is {' '}
+            <span className=" text-[#1eb6ff]">{personalData.name}</span>
+            {` , I'm a Professional `}
+            <span className=" text-[#1eb6ff]">{personalData.designation}</span>
+            .
+          </h1>
+
+          <div className="my-12 flex items-center gap-5">
+            <Link
+              href={personalData.github}
+              target='_blank'
+              className="transition-all text-[#1eb6ff] hover:scale-125 duration-300"
+            >
+              <BsGithub size={30} />
+            </Link>
+            <Link
+              href={personalData.linkedIn}
+              target='_blank'
+              className="transition-all text-[#1eb6ff] hover:scale-125 duration-300"
+            >
+              <BsLinkedin size={30} />
+            </Link>
+            
+             
+           
+
+          </div>
+
+          <div className="flex items-center gap-3">
+            <Link href="#contact" className="bg-gradient-to-r to-[#1eb6ff] from-violet-600 p-[1px] rounded-full transition-all duration-300 hover:from-[#1eb6ff]hover:to-violet-600">
+              <button className="px-3 text-xs md:px-8 py-3 md:py-4 bg-[#0d1224] rounded-full border-none text-center md:text-sm font-medium uppercase tracking-wider text-[#ffff] no-underline transition-all duration-200 ease-out  md:font-semibold flex items-center gap-1 hover:gap-3">
+                <span>Contact me</span>
+                <RiContactsFill size={16} />
+              </button>
+            </Link>
+
+            <Link className="px-3 text-xs md:px-8 py-3 md:py-4 bg-[#0d1224] rounded-full border-none text-center md:text-sm font-medium uppercase tracking-wider text-[#ffff] no-underline transition-all duration-200 ease-out  md:font-semibold flex items-center gap-1 hover:gap-3" role="button" target="_blank" href={personalData.resume}
+            >
+              <span>Get Resume</span>
+              <MdDownload size={16} />
+            </Link>
+          </div>
+
+        </div>
+        <div className="order-1 lg:order-2 from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37]">
+          <div className="flex flex-row">
+            <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-[#1eb6ff] to-violet-600"></div>
+            <div className="h-[1px] w-full bg-gradient-to-r from-violet-600 to-transparent"></div>
+          </div>
+          <div className="px-4 lg:px-8 py-5">
+            <div className="flex flex-row space-x-2">
+              <div className="h-3 w-3 rounded-full bg-red-400"></div>
+              <div className="h-3 w-3 rounded-full bg-[#1ec8ff]"></div>
+              <div className="h-3 w-3 rounded-full bg-green-200"></div>
+            </div>
+          </div>
+          <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
+            <code className="font-mono text-xs md:text-sm lg:text-base">
+              <div className="blink">
+                <span className="mr-2 text-[#1eb6ff]">const</span>
+                <span className="mr-2 text-white">Penetration tester</span>
+                <span className="mr-2 text-[#1eb6ff]">=</span>
+                <span className="text-gray-400">{'{'}</span>
+              </div>
+              <div>
+                <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
+                <span className="text-gray-400">{`'`}</span>
+                <span className="text-[#1ec8ff]">{personalData.name}</span>
+                <span className="text-gray-400">{`',`}</span>
+              </div>
+              <div className="ml-4 lg:ml-8 mr-2">
+                <span className=" text-white">Technical skills:</span>
+                <span className="text-gray-400">{`['`}</span>
+                <span className="text-[#1ec8ff]">JavaScript</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-[#1ec8ff]"> Penetration Testing (Web, Network) </span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-[#1ec8ff]">Vulnerability Assessment</span>
+                <span className="text-gray-400">{"', '"}</span> 
+                <span className="text-[#1ec8ff]"> Network Security</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-[#1ec8ff]"> illustrator</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-[#1ec8ff]"> MS office</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-[#1ec8ff]"> Database Management System </span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-[#1ec8ff]">Python</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-[#1ec8ff]">MySql</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-[#1ec8ff]"> Endpoint Securit</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-[#1ec8ff]">Risk Assessment</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-[#1ec8ff]">Ethical Hacking</span>
+                <span className="text-gray-400">{"'],"}</span>
+              </div>
+              <div>
+                <span className="ml-4 lg:ml-8 mr-2 text-white">SmartWorker:</span>
+                <span className="text-[#1ec8ff]">true</span>
+                <span className="text-gray-400">,</span>
+              </div>
+              <div>
+                <span className="ml-4 lg:ml-8 mr-2 text-white">quickLearner:</span>
+                <span className="text-[#1ec8ff]">true</span>
+                <span className="text-gray-400">,</span>
+              </div>
+              <div>
+                <span className="ml-4 lg:ml-8 mr-2 text-white">problemSolver:</span>
+                <span className="text-[#1ec8ff]">true</span>
+                <span className="text-gray-400">,</span>
+              </div>
+              <div>
+                <span className="ml-4 lg:ml-8 mr-2 text-white">hireable:</span>
+                <span className="text-[#1ec8ff]">function</span>
+                <span className="text-gray-400">{'() {'}</span>
+              </div>
+              <div>
+                <span className="ml-8 lg:ml-16 mr-2 text-[#1ec8ff]">return</span>
+                <span className="text-gray-400">{`(`}</span>
+              </div>
+              <div>
+                <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
+                <span className="mr-2 text-white">smartWorker</span>
+                <span className="text-[#1ec8ff]">&amp;&amp;</span>
+              </div>
+              <div>
+                <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
+                <span className="mr-2 text-white">problemSolver</span>
+                <span className="text-[#1ec8ff]">&amp;&amp;</span>
+              </div>
+              <div>
+                <span className="ml-12 lg:ml-24 text-cyan-400">this.</span>
+                <span className="mr-2 text-white">skills.length</span>
+                <span className="mr-2 text-[#1ec8ff]">&gt;=</span>
+                <span className="text-[#1ec8ff]">5</span>
+              </div>
+              <div><span className="ml-8 lg:ml-16 mr-2 text-gray-400">{`);`}</span></div>
+              <div><span className="ml-4 lg:ml-8 text-gray-400">{`};`}</span></div>
+              <div><span className="text-gray-400">{`};`}</span></div>
+            </code>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
