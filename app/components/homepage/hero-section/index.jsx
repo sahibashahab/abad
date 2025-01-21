@@ -108,7 +108,7 @@ function HeroSection() {
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-[#1ec8ff]">MySql</span>
                 <span className="text-gray-400">{"', '"}</span>
-                <span className="text-[#1ec8ff]"> Endpoint Securit</span>
+                <span className="text-[#1ec8ff]"> Endpoint Security</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-[#1ec8ff]">Risk Assessment</span>
                 <span className="text-gray-400">{"', '"}</span>
