@@ -2,7 +2,7 @@ export const personalData = {
   name: "M. Abad Khan",
   profile: '/abad1.png',
   designation: "Penetration tester",
-  description: "My name is Abad Khan. I am a dedicated BSCS (Bachelor of Science in Computer Science) student with a passion for cybersecurity. I have chosen to specialize in cyber security. I am actively engaged in learning and polish my skills in penetration testing, which involves identifying vulnerabilities in systems. Additionally, Skill set in network analysis, allowing me to understand and optimize network performance.",
+  description: "My name is Abad Khan. I am a dedicated BSCS (Bachelor of Science in Computer Science) student with a passion for cybersecurity. I have chosen to specialize in cyber security. I am actively engaged in learning and polish my skills in penetration testing, which involves identifying vulnerabilities in systems. Additionally, Skill set in network analysis, allowing me to understand and optimize network performance.Additionally, I bring professional experience as an Associate SQA Engineer.",
   email: 'abadkhan5438@gmail.com',
   phone: '+923340221308',
   address: 'Karachi, Pakistan',
