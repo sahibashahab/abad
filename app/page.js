@@ -11,7 +11,10 @@ import Skills from "./components/homepage/skills";
 
   
 
-export default function Home() {
+
+export default async function Home() {
+  
+
   return (
     <>
       <HeroSection />
@@ -22,5 +25,5 @@ export default function Home() {
       <Education />
       <ContactSection />
     </>
-  );
-}
+  )
+};
