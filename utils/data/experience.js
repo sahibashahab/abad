@@ -6,12 +6,12 @@ export const experiences = [
     duration: "( December 2024- Present)"
 
   },
-  // {
-  //   id: 2,
-  //   title: '',
-  //   company: "",
-  //   duration: ""
-  // },
+  {
+    id: 2,
+    title: 'Bug hunter',
+    company: "Hacker01",
+    duration: "From 2023 to present"
+  },
   // {
   //   id: 3,
   //   title: "",

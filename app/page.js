@@ -21,7 +21,6 @@ export default async function Home() {
       <AboutSection />
       <Experience />
       <Skills />
-      <tech />
       <Projects />
       <Education />
       <ContactSection />
