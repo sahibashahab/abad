@@ -2,7 +2,7 @@ export const educations = [
   {
     id: 1,
     title: "Bachelor Degree",
-    duration: "2020 - Present",
+    duration: "2020 - 2025",
     institution: "Karachi Institute Of Economics & Technology ",
   },
   {
